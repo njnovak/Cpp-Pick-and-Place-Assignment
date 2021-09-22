@@ -4,4 +4,4 @@ This repository hosts an assignment completed for a c++ robotics programming cla
 Main rules:
 - Boxes cannot hold negative numbers.
 - Boxes cannot hold more parts than a larger size.
-- The robot fills large boxes first, then moves to the next smallest box. There may be extra parts remaining.
+- The robot fills the largest boxes that can be fully filled first, then moves to the next smallest box. There may be extra parts remaining.

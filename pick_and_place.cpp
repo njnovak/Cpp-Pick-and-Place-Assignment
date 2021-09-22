@@ -8,12 +8,16 @@ using namespace std;
 void getInputs(){
   list box_nums<int>;
   list box_sizes<int>;
+  int part_nums;
   cout << "Please enter the number of boxes, as numbers spearated by spaces. \n Format: S/M/L/XL: " << endl;
   cin >> box_nums;
   checknegative(box_nums, "first, box number");
   cout << "Please enter the amount of parts each box can hold, as numbers spearated by spaces. \n Format: S/M/L/XL: " << endl;
   cin >> box_sizes;
   checkNegative(box_nums, "second, box size");
+  cout << "Please enter the number of parts, as a positive number: " << endl;
+  cin >> part_nums;
+  
 }
 
 void checkNegative(list num_list<int>, string var_name){ //pass by reference here

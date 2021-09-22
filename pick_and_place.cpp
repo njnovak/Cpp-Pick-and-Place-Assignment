@@ -6,8 +6,8 @@
 using namespace std;
 
 void getInputs(){
-  list box_nums;
-  string box_sizes;
+  list box_nums<int>;
+  list box_sizes<int>;
   cout << "Please enter the number of boxes, as numbers spearated by spaces. \n Format: S/M/L/XL: " << endl;
   cin >> box_nums;
   checknegative(box_nums, "first, box number");
@@ -16,9 +16,9 @@ void getInputs(){
   checkNegative(box_nums, "second, box size");
 }
 
-void checkNegative(string num_string, string var_name){ //pass by reference here
-  for(int i=0; i<num_string.size(); i++){
-    if(box_nums[i] == '-'){
+void checkNegative(list num_list<int>, string var_name){ //pass by reference here
+  for(int i=0; i<num_list.size(); i++){
+    if(box_nums[i] == '-'){ //Change to accept list data structure
       cout << "Negative number detected in the " << var_name << " input. Please re-enter inputs with positive numbers." << endl;
       getInputs();
     }

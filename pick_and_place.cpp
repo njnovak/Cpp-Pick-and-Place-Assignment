@@ -18,9 +18,11 @@ void getInputs(){
 
 void checkNegative(list num_list<int>, string var_name){ //pass by reference here
   for(int i=0; i<num_list.size(); i++){
-    if(box_nums[i] == '-'){ //Change to accept list data structure
-      cout << "Negative number detected in the " << var_name << " input. Please re-enter inputs with positive numbers." << endl;
-      getInputs();
+    for(int j=0; j<i.size(); j++){
+      if(i[j] == '-'){ //Change to accept list data structure
+        cout << "Negative number detected in the " << var_name << " input. Please re-enter inputs with positive numbers." << endl;
+        getInputs();
+    }
     }
   }
 }

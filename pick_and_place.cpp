@@ -6,7 +6,7 @@
 using namespace std;
 
 void getInputs(){
-  string box_nums;
+  list box_nums;
   string box_sizes;
   cout << "Please enter the number of boxes, as numbers spearated by spaces. \n Format: S/M/L/XL: " << endl;
   cin >> box_nums;
@@ -23,6 +23,10 @@ void checkNegative(string num_string, string var_name){ //pass by reference here
       getInputs();
     }
   }
+}
+
+void checkSizes(){
+  
 }
 
 int main(){

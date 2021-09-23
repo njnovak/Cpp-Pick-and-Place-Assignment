@@ -12,11 +12,16 @@ void getInputs(){
   cout << "Please enter the number of boxes, as numbers spearated by spaces. \n Format: S/M/L/XL: " << endl;
   cin >> box_nums;
   checkNegative(box_nums, "first, box number");
+  // Get the number of boxes and check them for illegal entries.
+  
   cout << "Please enter the amount of parts each box can hold, as numbers spearated by spaces. \n Format: S/M/L/XL: " << endl;
   cin >> box_sizes;
   checkNegative(box_nums, "second, box size");
+  // Get the capacity of the boxes and check them for illegal entries.
+  
   cout << "Please enter the number of parts, as a positive number: " << endl;
   cin >> part_nums;
+  // Get the number of parts and check for illegal entries.
   
 }
 

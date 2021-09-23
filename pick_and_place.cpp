@@ -11,7 +11,7 @@ void getInputs(){
   int part_nums;
   cout << "Please enter the number of boxes, as numbers spearated by spaces. \n Format: S/M/L/XL: " << endl;
   cin >> box_nums;
-  checknegative(box_nums, "first, box number");
+  checkNegative(box_nums, "first, box number");
   cout << "Please enter the amount of parts each box can hold, as numbers spearated by spaces. \n Format: S/M/L/XL: " << endl;
   cin >> box_sizes;
   checkNegative(box_nums, "second, box size");

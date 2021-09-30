@@ -6,8 +6,8 @@
 using namespace std;
 
 void getInputs(){
-  int box_nums[];
-  int box_sizes[];
+  int box_nums[]{0};
+  int box_sizes[]{0};
   int part_nums;
   cout << "Please enter the number of boxes, as numbers spearated by spaces. \n Format: S/M/L/XL: " << endl;
   cin >> box_nums;

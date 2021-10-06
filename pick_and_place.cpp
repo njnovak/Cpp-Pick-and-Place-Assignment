@@ -43,21 +43,21 @@ int fillBoxes(int s_boxes, int m_boxes, int l_boxes, int xl_boxes, int s_size, i
         full_xl++;
         xl_boxes--;
     }
-    cout << "XL Box (" << xl_tot << " x " << xl_size << " max): " << full_xl << "\t-- remaining parts: " << parts_remain << '\n';
+    cout << "XL Box (" << xl_tot << " x " << xl_size << " max): " << full_xl << "\t--\tremaining parts: " << parts_remain << '\n';
 
     while(parts_remain >= l_size && l_boxes > 0){
         parts_remain -= l_size;
         full_l++;
         l_boxes--;
     }
-    cout << "L Box (" << l_tot << " x " << l_size << " max): " << full_l << "\t-- remaining parts: " << parts_remain << '\n';
+    cout << "L Box (" << l_tot << " x " << l_size << " max): " << full_l << "\t--\tremaining parts: " << parts_remain << '\n';
 
     while(parts_remain >= m_size && m_boxes > 0){
         parts_remain -= m_size;
         full_m++;
         m_boxes--;
     }
-    cout << "M Box (" << m_tot << " x " << m_size << " max): " << full_m << "\t-- remaining parts: " << parts_remain << '\n';
+    cout << "M Box (" << m_tot << " x " << m_size << " max): " << full_m << "\t--\tremaining parts: " << parts_remain << '\n';
 
 
     while(parts_remain >= s_size && s_boxes > 0){
@@ -65,7 +65,7 @@ int fillBoxes(int s_boxes, int m_boxes, int l_boxes, int xl_boxes, int s_size, i
         full_s++;
         s_boxes--;
     }
-    cout << "S Box (" << s_tot << " x " << s_size << " max): " << full_s << "\t-- remaining parts: " << parts_remain << '\n';
+    cout << "S Box (" << s_tot << " x " << s_size << " max): " << full_s << "\t--\tremaining parts: " << parts_remain << '\n';
 
 
 

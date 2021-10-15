@@ -1,8 +1,8 @@
 /**
- * @file RWA01.cpp
+ * @file PickandPlace.cpp
  * @author Nicholas Novak (nnovak@umd.edu)
  * @brief This program will simulate the packaging of boxes by an industrial robot.
- * @version 0.4
+ * @version 0.6
  * @date 2021-10-04
  * 
  * @copyright Copyright (c) 2021
